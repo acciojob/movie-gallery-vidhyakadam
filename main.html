@@ -1,16 +1,54 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Image Gallery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css">
+    <style>
+        .movie-row {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .movie-col {
+            text-align: center;
+        }
+
+        .movie-img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="container-fluid">
+        <div class="row movie-row">
+            <div class="col-sm-1 movie-col">
+                <img src="movie-image.jpg" alt="Movie 1" class="movie-img">
+            </div>
+            <!-- Repeat this div for the remaining 11 images in the first row -->
+        </div>
+        <div class="row movie-row">
+            <div class="col-sm-2 movie-col">
+                <img src="movie-image.jpg" alt="Movie 2" class="movie-img">
+            </div>
+            <!-- Repeat this div for the remaining 5 images in the second row -->
+        </div>
+        <div class="row movie-row">
+            <div class="col-sm-4 movie-col">
+                <img src="movie-image.jpg" alt="Movie 3" class="movie-img">
+            </div>
+            <!-- Repeat this div for the remaining 2 images in the third row -->
+        </div>
+        <div class="row movie-row">
+            <div class="col-sm-12 movie-col">
+                <img src="movie-image.jpg" alt="Movie 4" class="movie-img">
+            </div>
+        </div>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
